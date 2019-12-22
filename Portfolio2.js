@@ -1,7 +1,7 @@
 
 var pics = [
-  "img/meCookie.png",
-  "img/picAmy1.jpg",
+	"img/meCookie.png",
+	"img/picAmy1.jpg",
 	"img/picNightmare.jpg",
 	"img/PicNikola.jpg",
 	"img/picZebraJelena.jpg",
@@ -15,9 +15,8 @@ var pics = [
 	"img/Pearl.jpg",
 ];
 
-var img = document.querySelector("img.mecropped");
+var img = document.querySelector("img.mecropped"); 
 var counter = 1;
-
 
 img.onmouseover = function() {
 	document.getElementById("cookie").style.display = "none";
@@ -26,7 +25,7 @@ img.onmouseover = function() {
 document.getElementById("see").onclick = function() {
 	document.getElementById("cookie").style.display = "none";
 	if(counter === 13){
-		counter = 0;
+		counter = 1;
 	}	
 	img.src = pics[counter]
 	counter = counter + 1;

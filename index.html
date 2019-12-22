@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Andreja Prpic</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet"> 
+	<style>
+		body {
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-around;
+			text-align: center;
+			color:#22F19D;
+			font-family: 'Love Ya Like A Sister', cursive;	  
+			background-image: url("img/backgroundPainting.jpg"); /* The image used */
+			background-size: cover; /* Resize the background image to cover the entire container */
+			overflow-y: hidden;
+			cursor: url(cursorOstrich42.png)
+		 }
+
+		 p {
+			font-size: 50px;
+			text-shadow: 3px 3px 2px black;
+		 }
+		
+		 #button {
+			 background:#0dba74;
+			 color: white;
+			 border-radius: 55px;
+			 padding: 8px 15px 6px 15px;
+			 margin-bottom: 1em;
+			 font-size: 22px;
+			 box-shadow: 0 4px 8px 0  #222;
+			 font-family: 'Love Ya Like A Sister', cursive;
+		 }
+		 
+		 #see {
+			background: #309AEF; 
+			color: white;	
+			border-radius: 55px;	
+			padding: 8px 15px 6px 15px;
+			margin-right: 5px;
+			font-family: 'Love Ya Like A Sister', cursive;		
+			font-size: 22px;
+			box-shadow: 0 4px 8px black;
+			outline: none;
+			transition: all 1.5s;
+		}
+
+		button:hover {
+			background: #FFC924;
+			color: white;
+			transition: all 0.5s;
+			outline: none;
+			transform: scale(1.05);
+			box-shadow: 0 14px 18px #222;
+		  }	 
+
+		section img {
+			height: 300px;
+			border-radius: 70%;
+			border: solid 11px white;
+			margin: auto;
+			box-shadow: 0 12px 16px 0  #222;
+			/*animation: fallIn  1s linear;*/
+			animation-duration: 2s;
+			animation-iteration-count: 1;
+			transform-origin: bottom;
+			animation-name: bounce-7;
+			animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+			animation-delay: 0.8s;
+			transition: all 1s;
+		}
+		 
+			 @keyframes bounce-7 {
+			0%   { transform: scale(1,1)      translateY(0); }
+			10%  { transform: scale(1.1,.9)   translateY(0); }
+			30%  { transform: scale(.9,1.1)   translateY(-20px); }
+			50%  { transform: scale(1.05,.95) translateY(0); }
+			57%  { transform: scale(1,1)      translateY(-7px); }
+			64%  { transform: scale(1,1)      translateY(0); }
+			100% { transform: scale(1,1)      translateY(0); }
+		}
+
+		section img:hover {
+			 margin-top: 22%;
+			 width: 430px;
+			 height: 540px;
+			 transform: scale(1.02);
+				
+			 }
+
+		 #wrapper {
+			position: relative;
+		}
+
+		#link {
+			position: absolute;
+			width: 50px;
+			right: 18%;
+			top: 7%;
+			z-index:200;
+			animation: linkIn 2.3s ease-in 1;
+			animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+			animation-fill-mode: forwards;
+			filter: drop-shadow(5px 10px 10px #222);
+			}	
+
+		a img {
+			width: 150px;
+		}
+	
+		#container {
+			display: flex;
+		}
+		#cookie {
+			position: absolute;
+			width: 50px;
+			top:7%;
+			z-index:200;
+			animation: drift 2.3s ease-in 1;
+			animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+			animation-fill-mode: forwards;
+			filter: drop-shadow(5px 10px 10px #222);
+	}		
+		 				
+		 form {
+			display: inline;
+		 }
+
+		@keyframes drift {
+			0%{transform: translateX(-950px);}
+			40%{transform: scale(1.1, 0.9) translateX(-315px);}
+			80%{transform:scale(.9,1.1) translateX(-700px);}
+			100%{transform: translateX(-607px);}
+		} 
+	
+
+		@keyframes linkIn {
+			0%{transform: translateX(400px);}
+			40%{transform: scale(1.1, 0.9) translateX(-150px);}
+			80%{transform: scale(.9,1.1) translateX(200px);}
+			100%{transform: translateX(110px);}
+	}
+		
+/*for smaller screens*/
+@media screen and (max-width: 1200px) {
+			
+	#link {
+		right: 17%;
+		top: 30%;
+	}	
+	
+	#cookie {
+		right: 40%;
+    	top: 30%;
+	}
+		}
+	
+@media screen and (max-width: 1000px) {	
+	
+	#link {
+		right: 7%;
+	}
+	
+	#cookie {
+		right: 30%;
+	}
+	
+			
+		}
+		
+@media screen and (max-width: 700px) {
+	
+	p {
+		font-size: 28px;
+		margin-bottom: 15px;
+	}
+	
+	input,
+	button {
+		font-size: 18px;
+	}
+	
+	section img {
+		height: 250px;
+		margin-top: 20px;
+	}
+	
+	button,
+	input {
+		margin: 5px;
+		padding: 5px 10px;
+	}
+	
+	#link {
+		 position: absolute;
+		 right: 17%;
+		 top: 4%;
+		 z-index:200;
+         animation: linkIn 2s ease-in 1;
+		 animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+		 animation-fill-mode: forwards;
+     }	
+	
+	a img {
+    	width: 100px;
+	}
+	
+	#cookie {
+		right: 20%;
+		top: 4%
+	}
+
+	@keyframes linkIn {
+		0%{transform: translateX(270px);}
+		40%{transform: scale(1.1, 0.9) translateX(-20px);}
+		80%{transform: scale(.9,1.1) translateX(110px);}
+		100%{transform: translateX(65px);}
+		} 
+	}
+		
+@media screen and (max-width: 650px) {
+	
+ 	section img:hover {
+		margin-top: 22%;
+		max-width: 320px;
+		max-height: 420px;
+		transform: scale(1.02);
+		}
+	
+	#cookie {
+		display: none;		
+		}
+	}
+
+	</style> 
+
+</head>
+<body>
+	<div id="wrapper">
+		 <section id="container">
+				<img class="mecropped" src="img/meCookie.png">
+		 </section>
+		 <p>Hi! I'm Andreja. What can I paint for you?</p> 
+		<section id="buttonAndInput">  
+			<button id="see">See my stuff</button>
+			<button id="button" onclick="location.href='mailto:andreja.prpic@gmail.com'">Contact me</button>
+		</section> 
+	</div>
+		<div id="cookie">
+			<img src="img/cookie3smallest.png" alt="cookie">
+		</div>
+		<div id="link">
+		<a href="https://godlessbeasts.wordpress.com/" target="_blank">
+			<img src="img/logo.gif" title="I'm a link to a bigger website!" alt="ostrich link">
+		</a>
+	</div>
+	<script type="text/javascript" src="Portfolio2.js"></script>
+</body>
+</html>
