@@ -1,6 +1,6 @@
 
 var pics = [
-	"img/meCookie.png",
+	"img/meCookie2.png",
 	"img/picAmy1.jpg",
 	"img/picNightmare.jpg",
 	"img/PicNikola.jpg",
