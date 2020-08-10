@@ -1,4 +1,4 @@
-# My-Artistic-Portfolio
+# My-Artistic-Portfolio-First-Javascript-Usage
 
 My first usage of Javascript.
 See it live [here](https://andrejap.github.io/My-Artistic-Portfolio/).
