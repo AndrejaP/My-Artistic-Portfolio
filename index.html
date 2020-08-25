@@ -18,7 +18,7 @@
 			align-items: center;
 			justify-content: space-around;
 			text-align: center;
-			color:#22F19D;
+			color:#ffffff;
 			font-family: 'Love Ya Like A Sister', cursive;	  
 			background-image: url("img/backgroundPainting2.jpg"); /* The image used */
 			background-size: cover; /* Resize the background image to cover the entire container */
@@ -32,7 +32,7 @@
 		 }
 		
 		 #button {
-			 background:#0dba74;
+			 background:#D69529;
 			 color: white;
 			 border-radius: 55px;
 			 padding: 8px 15px 6px 15px;
@@ -43,7 +43,7 @@
 		 }
 		 
 		 #see {
-			background: #309AEF; 
+			background: #296ad6; 
 			color: white;	
 			border-radius: 55px;	
 			padding: 8px 15px 6px 15px;
@@ -101,6 +101,19 @@
 		 #wrapper {
 			position: relative;
 		}
+		#overlay {
+			  position: fixed; /* Sit on top of the page content */
+			  display: none; /* Hidden by default */
+			  width: 100%; /* Full width (cover the whole page) */
+			  height: 100%; /* Full height (cover the whole page) */
+			  top: 0;
+			  left: 0;
+			  right: 0;
+			  bottom: 0;
+			  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+			  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+			  cursor: pointer; /* Add a pointer on hover */
+			}
 
 		#link {
 			position: absolute;
@@ -115,7 +128,7 @@
 			}	
 
 		a img {
-			width: 150px;
+			width: 100px;
 		}
 	
 		#container {
@@ -254,16 +267,18 @@
 		<section id="buttonAndInput">  
 			<button id="see">See my stuff</button>
 			<button id="button" onclick="location.href='mailto:andreja.prpic@gmail.com'">Contact me</button>
-		</section> 
+		</section>
+		<div id="overlay"></div>
 	</div>
-		<div id="cookie">
+	<div id="cookie">
 			<img src="img/cookie3smallest.png" alt="cookie">
 		</div>
 		<div id="link">
 		<a href="https://godlessbeasts.wordpress.com/" target="_blank">
 			<img src="img/logo.gif" title="I'm a link to a bigger website!" alt="ostrich link">
 		</a>
-	</div>
+		
+	 </div>
 	<script type="text/javascript" src="Portfolio2.js"></script>
 </body>
 </html>
